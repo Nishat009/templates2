@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paymoney</title>
+    <script src="./assets/js/flashesh-dark.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+	  <link rel="stylesheet" href="./assets/css/owl-css/owl.css">
+	  <link rel="stylesheet" href="../assets/select2/select2.min.css">
+	  <link rel="shortcut icon" href="./assets/images/favicon.png" />
+</head>
+<body class="bg-body-muted">
+    <div class="container-fluid container-layout px-0">
+        <div class="section-payment">
+          <div class="transaction-details-module">
+            <div class="total-amount">
+              <h2>Transaction Details</h2>
+              <div class="d-flex justify-content-between mb-10">
+                <p>You are sending</p>
+                <p>Medium</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3>250 USD</h3>
+                <div class="amount-logo">
+                  <img  src="./assets/images/amount-logo.png" alt="logo" class="img-fluid light-logo">
+                  <img src="./assets/images/amount-dark-logo.png" alt="logo" class="img-fluid dark-logo">
+                </div>
+              </div>
+            </div>
+            <div class="amount-desc"><p>The recipient passed a special verification and confirmed his trustworthiness.</p></div>
+            <div class="row">
+              <div class="col-12">
+                  <div class="form-group mb-3 xs-mb">
+                    <label class="form-label">Card Number</label>
+                    <input id="iban" type="text" class="form-control input-form-control" maxlength="19" placeholder="Enter card number">
+                  </div>
+              </div> 
+            </div>
+            <div class="row sm-gx-10">
+              <div class="col-md-4 col-6">
+                <div class="select2-extends">
+                  <label>Month</label>
+                  <select class="select2" data-minimum-results-for-search="Infinity">
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="April">Apr</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                  </select>
+                </div> 
+              </div>
+              <div class="col-md-4 col-6">
+                <div class="form-group mb-3 xs-mb custom-input">
+                  <label class="form-label">Year</label>
+                  <input type="text" class="form-control input-form-control" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="form-group mb-3 mt-3p xs-mb-btn custom-input">
+                  <label class="form-label d-flex justify-content-between align-items-center"><span>CVC</span>
+                    <a class="pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Lorem ipsum">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="8" fill="#C6C5D7"></circle>
+                        <path d="M8.12335 5.11196C7.78479 5.05389 7.4366 5.11751 7.14046 5.29156C6.84431 5.46561 6.61932 5.73885 6.50533 6.06289C6.37204 6.44179 5.95683 6.6409 5.57793 6.50761C5.19903 6.37432 4.99992 5.95911 5.13321 5.58021C5.36119 4.93213 5.81117 4.38565 6.40347 4.03755C6.99576 3.68945 7.69214 3.56221 8.36926 3.67835C9.04638 3.7945 9.66054 4.14654 10.103 4.67211C10.5453 5.19759 10.7875 5.86263 10.7865 6.54949C10.7862 7.66247 9.96104 8.39747 9.37178 8.79031C9.05495 9.00153 8.74331 9.15683 8.51373 9.25887C8.39791 9.31034 8.30038 9.3494 8.23011 9.37618C8.19491 9.38959 8.16637 9.39998 8.1456 9.40736L8.12034 9.41621L8.11229 9.41896L8.10946 9.41991L8.10834 9.42029C8.10834 9.42029 8.10743 9.42059 7.87761 8.73113L8.10743 9.42059C7.72638 9.54761 7.31451 9.34167 7.1875 8.96062C7.06052 8.5797 7.26628 8.16798 7.64709 8.04082L7.65831 8.03687C7.6695 8.03289 7.68783 8.02624 7.71229 8.01692C7.76133 7.99824 7.83426 7.96912 7.92299 7.92969C8.1025 7.8499 8.33631 7.73248 8.56494 7.58006C9.06647 7.24571 9.332 6.89001 9.332 6.54882L9.332 6.54774C9.33251 6.20423 9.21143 5.87163 8.99021 5.60884C8.769 5.34605 8.46191 5.17003 8.12335 5.11196Z" fill="white"></path>
+                        <path d="M7.20836 11.6397C7.20836 11.2381 7.53397 10.9125 7.93563 10.9125H7.9429C8.34457 10.9125 8.67018 11.2381 8.67018 11.6397C8.67018 12.0414 8.34457 12.367 7.9429 12.367H7.93563C7.53397 12.367 7.20836 12.0414 7.20836 11.6397Z" fill="white"></path>
+                      </svg>
+                   </a>
+                 </label>
+                  <input type="text" class="form-control input-form-control" placeholder="">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                  <div class="d-grid mt-3p">
+                    <a href="paypal.html" class="btn btn-lg btn-primary" type="submit"><span class="px-1 text-uppercase">Confirm Payment</span></a>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="d-flex justify-content-center mt-32 mb-5">
+            <a href="payment-methods.html" class="d-inline-flex align-items-center back-btn pointer">
+              <svg class="position-relative" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.47075 10.4709C8.7311 10.2105 8.7311 9.78842 8.47075 9.52807L4.94216 5.99947L8.47075 2.47087C8.7311 2.21053 8.7311 1.78842 8.47075 1.52807C8.2104 1.26772 7.78829 1.26772 7.52794 1.52807L3.52795 5.52807C3.2676 5.78842 3.2676 6.21053 3.52795 6.47088L7.52794 10.4709C7.78829 10.7312 8.2104 10.7312 8.47075 10.4709Z" fill="currentColor"></path>
+              </svg>
+              <span class="ms-1">Back</span>
+            </a>
+        </div>
+        </div>
+    </div>  
+    
+    <script src="../assets/js/bootstrap-js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap-js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="../assets/select2/select2.min.js"></script>
+   
+</body>
+</html>

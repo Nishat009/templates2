@@ -1,0 +1,176 @@
+body {
+    background-color: #ecf0f5;
+}
+p {
+    margin-bottom: 0 !important;
+}
+.main-div {
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.card-position {
+    margin-top: 40px;
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    color: #2c2c2c;
+}
+.type-fixed {
+    padding-right: 20px;
+}
+.second-part {
+    margin-top: 20px !important;
+}
+.card-design {
+    background-color: white;
+    border: 1px solid #ecf0f5;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+}
+.card-design:last-child {
+    margin-right: 0px;
+}
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #2c2c2c;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 4px;
+    justify-content: space-between;
+}
+.des {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    color: #9b9b9b;
+}
+.profit-duration {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f8f6ff;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+.percentage-div {
+    display: flex;
+}
+.percentage {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #635bff;
+}
+.percentage-sign {
+    margin-top: 9px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #635bff;
+    font-weight: 600;
+}
+.profit-duration-paragraph {
+    font-style: normal;
+    text-align: end;
+    font-weight: 600;
+    font-size: 12px;
+    color: #858585;
+}
+.profit {
+    text-align: left;
+}
+.amount-type-div {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.paragraph-5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #9b9b9b;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.paragraph-6 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #565656;
+}
+.drop-down-icon {
+    cursor: pointer !important;
+    width: 35px;
+    margin-right: -10px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.drop-down-icon:hover {
+    background: #f8f6ff;
+}
+
+.drop-down-list {
+    min-width: 115px !important;
+}
+
+.dropdown-menu {
+    padding: 0px !important;
+    margin-top: -27px !important;
+    margin-left: -120px !important;
+}
+
+.dropdown-menu-list {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #858585;
+}
+
+.list1 {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+
+.drop-down-img {
+    margin-right: 8px;
+}
+@media screen and (max-width: 768px) and (min-width: 280px) {
+    .main-div {
+        margin: 0px;
+        padding: 0px !important;
+    }
+    .card-position {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .content {
+        padding: 20px !important;
+    }
+    .des {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .card-position {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 1400px) and (min-width: 1025px) {
+    .card-position {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+

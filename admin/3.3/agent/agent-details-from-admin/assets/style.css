@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(./fonts/sanspro/SourceSansPro-SemiBold.ttf);
+}
+.sans-pro {
+    font-family: "Source Sans Pro";
+}
+.d-flex {
+    display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+.justify-content-start {
+    justify-content: flex-start;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}

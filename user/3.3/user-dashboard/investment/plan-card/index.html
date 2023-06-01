@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest Plan</title>
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        @media (min-width: 992px) and (max-width: 1920px) {
+            .card {
+                width: 306px !important;
+                height: 434px !important;
+            }
+        }
+
+        @media (min-width: 270px) and (max-width: 575px) {
+            .card {
+
+                height: 444px;
+            }
+        }
+        .important{
+            margin-top: 32px;
+        }
+
+        /* this.tablet = window.matchMedia('(min-width:767px) and (max-width: 992px)'); */
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container section">
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p class="title-p sans-pro">Investment Plans</p>
+                </div>
+            </div>
+
+            <div class="row one">
+                <div class="col-md-4 col-sm-6 mt-2 d-flex two">
+                    <div class="card flex-fill three">
+                        <h2 class="header text-center sans-pro h2-font">Silver</h2>
+                        <p class="text-center hp-font">This is the silver plan of the investment</p>
+                        <div class="silver-profit sil-bg d-flex flex-row justify-content-between">
+                            <div class="usd-profit">
+                                <h2 class="font-h2 sans-pro">10.00 USD</h2>
+                                <h5 class="font-h5 sans-pro mb-8">Hourly Profit</h5>
+                            </div>
+                            <div class="day-duration">
+                                <h2 class="font-h2 sans-pro">4 Days</h2>
+                                <h5 class="font-h5 sans-pro text-right">Duration</h5>
+                            </div>
+                        </div>
+                        <div class="silver-amount d-flex flex-row justify-content-between">
+                            <div class="min-amount">
+                                <h5 class="font-h5 sans-pro">Minimum Amount</h5>
+                                <h4 class="font-h4 sans-pro mtopbotom text-left">500.00 USD</h4>
+                            </div>
+                            <div class="max-amount">
+                                <h5 class="font-h5 sans-pro text-right">Maximum Amount</h5>
+                                <h4 class="font-h4 sans-pro mtopbotom text-center">1,000.00 USD</h4>
+                            </div>
+                        </div>
+                        <div class="mt-14 footer-details d-flex justify-content-between">
+                            <h5 class="font-h5 sans-pro text-left">Return Term</h5>
+                            <h5 class="font-h5 sans-pro ml-three">:</h5>
+                            <h5 class="font-h5 sans-pro text-right">96</h5>
+                        </div>
+                        <div class="mt-9 footer-details d-flex justify-content-between">
+                            <h5 class="font-h5 sans-pro text-left">Withdrawal Term</h5>
+                            <h5 class="font-h5 sans-pro ml-two">:</h5>
+                            <h5 class="font-h5 sans-pro text-right">After Matured</h5>
+                        </div>
+                        <div class="mt-9 footer-details d-flex justify-content-between">
+                            <h5 class="font-h5 sans-pro text-left">Capital Return</h5>
+                            <h5 class="font-h5 sans-pro ml-one">:</h5>
+                            <h5 class="font-h5 sans-pro text-right">After Matured</h5>
+                        </div>
+                        <div class="footer-button text-center" id="inv">
+                            <a href="javascript:void(0)" class="sans-pro btn btn-sm">Invest</a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-6 mt-2 d-flex two">
+                    <div class="card flex-fill three">
+                        <h2 class="header text-center sans-pro h2-font">Standard</h2>
+                        <p class="text-center hp-font">This is the standard plan of the investment</p>
+                        <div class="silver-profit stn-bg d-flex flex-row justify-content-between">
+                            <div class="usd-profit">
+                                <h2 class="font-h2 sans-pro color-blue">5.00%</h2>
+                                <h5 class="font-h5  sans-pro mb-8">Daily Profit</h5>
+                            </div>
+                            <div class="day-duration">
+                                <h2 class="font-h2 sans-pro color-blue">72 Days</h2>
+                                <h5 class="font-h5 sans-pro text-right">Duration</h5>
+                            </div>
+                        </div>
+                        <div class="silver-amount d-flex flex-row justify-content-center">
+                            <div class="min-amount">
+                                <h5 class="font-h5 sans-pro">Investment Amount</h5>
+                                <h4 class="font-h4 sans-pro mtopbotom text-center">14.00 GBP</h4>
+                            </div>
+                        </div>
+                        <div class="mt-14 d-flex ml4 ml11">
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-left">Return Term</h5>
+                            </div>
+                            <h5 class="font-h5 sans-pro">:</h5>
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-right">72</h5>
+                            </div>
+                        </div>
+                        <div class="mt-9 d-flex ml4 ml11">
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-left">Withdrawal Term</h5>
+                            </div>
+                            <h5 class="font-h5 sans-pro">:</h5>
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-right">After Matured</h5>
+                            </div>
+                        </div>
+                        <div class="mt-9 d-flex ml4 ml11">
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-left">Capital Return</h5>
+                            </div>
+                            <h5 class="font-h5 sans-pro">:</h5>
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-right">Term Basis</h5>
+                            </div>
+                        </div>
+                        <div class="footer-button text-center">
+                            <a href="javascript:void(0)" class="sans-pro btn btn-sm">Invest</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mt-2 d-flex two">
+                    <div class="card flex-fill three">
+                        <h2 class="header text-center sans-pro h2-font">Premium</h2>
+                        <p class="text-center hp-font">This is the premium plan of the investment</p>
+                        <div class="silver-profit prm-bg d-flex flex-row justify-content-between">
+                            <div class="usd-profit">
+                                <h2 class="font-h2 sans-pro">5.00%</h2>
+                                <h5 class="font-h5 sans-pro mb-8">Daily Profit</h5>
+                            </div>
+                            <div class="day-duration">
+                                <h2 class="font-h2 sans-pro">20 Days</h2>
+                                <h5 class="font-h5 sans-pro text-right">Duration</h5>
+                            </div>
+                        </div>
+                        <div class="silver-amount d-flex flex-row justify-content-center">
+                            <div class="min-amount">
+                                <h5 class="font-h5 sans-pro">Investment Amount</h5>
+                                <h4 class="font-h4 sans-pro mtopbotom text-center">14.00 GBP</h4>
+                            </div>
+                        </div>
+                        <div class="mt-14 d-flex ml4 ml11">
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-left">Return Term</h5>
+                            </div>
+                            <h5 class="font-h5 sans-pro">:</h5>
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-right">0</h5>
+                            </div>
+                        </div>
+                        <div class="mt-9 d-flex ml4 ml11">
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-left">Withdrawal Term</h5>
+                            </div>
+                            <h5 class="font-h5 sans-pro">:</h5>
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-right">Term Basis</h5>
+                            </div>
+                        </div>
+                        <div class="mt-9 d-flex ml4 ml11">
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-left">Capital Return</h5>
+                            </div>
+                            <h5 class="font-h5 sans-pro">:</h5>
+                            <div class="col-md-6">
+                                <h5 class="font-h5 sans-pro text-right">Term Basis</h5>
+                            </div>
+                        </div>
+                        <div class="footer-button text-center">
+                            <a href="javascript:void(0)" class="sans-pro btn btn-sm">Invest</a>
+
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="../../../assets/js/bootstrap.min.js"></script>
+    <script>
+        this.tablet = window.matchMedia('(min-width:767px) and (max-width: 992px)');
+
+        function myFunction(x) {
+            if (x.matches) {
+                $(".two>div").removeClass("flex-fill");
+                }
+                else{
+                }
+               
+            } 
+        var x = window.matchMedia('(min-width:992px) and (max-width: 1920px)');
+        myFunction(x) 
+        x.addListener(myFunction) 
+        
+        function myFunction2(y) {
+            if (y.matches) {
+                $("#inv").addClass("important");
+                }
+                else{
+                }
+            } 
+        var y = window.matchMedia('(min-width:768px) and (max-width: 991px)');
+        myFunction2(y) 
+        y.addListener(myFunction2) 
+    </script>
+</body>
+
+</html>

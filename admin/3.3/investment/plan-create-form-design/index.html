@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin Part related template</title>
+        <link rel="stylesheet" href="../../assets/bootstrap.css" />
+        <link rel="stylesheet" href="../../assets/font-awesome.min.css" />
+        <link rel="stylesheet" href="../../assets/select2.min.css" />
+        <link rel="stylesheet" href="assets/style.css" />
+    </head>
+    <body>
+        <div class="main-div">
+            <div class="header">
+                <p>Add Investment Plan</p>
+            </div>
+            <div class="form-details">
+                <form>
+                    <p class="plan-details">Plan details</p>
+                    <div>
+                        <label class="label-1">Name</label>
+                        <input type="text" class="form-control name-input" />
+                    </div>
+                    <div>
+                        <label class="label-1 label-2">Description</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <label class="label-1 label-2">Investment Type</label>
+                        <div class="cselect">
+                            <select class="selected" name="add_fields_placeholder" id="add_fields_placeholder" >
+                                <option value="Range">Range</option>
+                                <option value="Fixed">Fixed</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p class="Plan-Duration">Plan Duration</p>
+                    <div class="plan-duration-form">
+                        <div class="form-group">
+                            <label class="label-1">Duration</label>
+                            <input type="text" class="form-control duration-input" />
+                        </div>
+                        <div class="form-group day duration-input">
+                            <div class="cselect">
+                                <select class="selected">
+                                    <option>Day</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="Plan-Duration interest">interest / PROFIT</p>
+                    <div class="plan-duration-form">
+                        <div class="form-group">
+                            <label class="label-1">Interest Rate</label>
+                            <input type="text" class="form-control duration-input"/>
+                        </div>
+                        <div class="day duration-input">
+                            <div class="cselect">
+                                <select class="selected">
+                                    <option>Percent</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label-1 label-2">Profit Adjust</label>
+                        <div class="cselect">
+                            <select class="selected">
+                                <option>Daily</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <p class="Plan-Duration currency">CURRENCY</p>
+                    <div>
+                        <label class="label-1">Select Currency</label>
+                        <div class="cselect">
+                            <select class="selected">
+                                <option>USD</option>
+                              
+                            </select>
+                        </div>
+                    </div>
+                    <div class="plan-duration-form" name="add_fields_placeholderValue" id="add_fields_placeholderValue">
+                        <div>
+                            <label class="label-1 label-2">Minimum Amount</label >
+                            <input type="text" id="amount" class="form-control duration-input"/>
+                        </div>
+                        <div>
+                            <label class="label-1 label-2" >Maximum Amount</label>
+                            <input type="text" class="form-control duration-input" />
+                        </div>
+                    </div>
+                    <div id="amount-hide">
+                        <label class="label-1 label-2">Amount</label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                    <div>
+                        <label class="label-1 label-2 capital" >Capital Return</label>
+                        <div class="cselect">
+                            <select class="selected">
+                                <option>Active</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="plan-duration-form">
+                        <div>
+                            <div class="max-limit-investor">
+                                <label class="label-1 label-2">Maximum Investors</label>
+                                    <div class="help-tip">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima rem hic ullam modi
+                                            reprehenderit a, reiciendis ipsum. Enim facere laudantium, error asperiores quos nobis
+                                            placeat reprehenderit? Suscipit blanditiis recusandae expedita! </p>
+                                    </div>
+                            </div>
+                            <input type="text" class="form-control duration-input" />
+                        </div>
+                        <div>
+                           <div class="max-limit-investor">
+                            <label class="label-1 label-2" >Maximum limit for investors</label >
+                                <div class="help-tip">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima rem hic ullam modi
+                                        reprehenderit a, reiciendis ipsum. Enim facere laudantium, error asperiores quos nobis
+                                        placeat reprehenderit? Suscipit blanditiis recusandae expedita! </p>
+                                </div>
+                           </div>
+                            <input type="text" class="form-control duration-input" />
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label-1 label-2">Status</label>
+                        <div class="cselect">
+                            <select class="selected">
+                                <option>Active</option>
+                                <option>Active</option>
+                                <option>Active</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="radio-section">
+                        <div>
+                            <p>Withdraw after matured</p>
+                            <div class="radio-selection">
+                                <label class="radio-buttons">Yes
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="radio-buttons radio-buttons-no">No
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                        </div>
+                        <div class="radio-section-2">
+                            <p>Is featured</p>
+                            <div class="radio-selection">
+                                <label class="radio-buttons">Yes
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="radio-buttons radio-buttons-no">No
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-cancel-section">
+                        <button type="submit" class="btn submit">Submit</button>
+                        <button type="submit" class="btn cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="../../assets/jquery.js"></script>
+        <script src="../../assets/bootstrap.min.js"></script>
+        <script src="../../assets/select2.full.min.js"></script>
+        <script>
+            $(window).on("load", function () {
+                if (
+                    $("#add_fields_placeholder")
+                        .find("option:selected")
+                        .val() == "Range"
+                ) {
+                    $("#add_fields_placeholderValue").show();
+                    $("#amount-hide").hide();
+                } else {
+                    $("#add_fields_placeholderValue").hide();
+                    $("#amount-hide").show();
+                }
+            });
+            $("#add_fields_placeholder").change(function () {
+                if ($(this).find("option:selected").val() == "Range") {
+                    $("#add_fields_placeholderValue").show();
+                    $("#amount-hide").hide();
+                } else {
+                    $("#add_fields_placeholderValue").hide();
+                    $("#amount-hide").show();
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Part related template</title>
+    <link rel="stylesheet" href="../../assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            background-color: #ECF0F5 !important;
+        }
+
+        .agent-pro-title {
+            font-style: normal;
+            font-size: 20px;
+            line-height: 25px;
+            color: #464646;
+        }
+
+        .twidth {
+            width: 184px;
+        }
+
+        .walet-text {
+            font-style: normal;
+            font-size: 20px;
+            line-height: 25px;
+            color: #2C2C2C;
+        }
+
+        .p-desc {
+            font-style: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: #858585;
+        }
+
+        .p-desc-div {
+            width: 440px;
+            height: 44px;
+        }
+
+        .box {
+
+            position: relative;
+            border-radius: 3px;
+            background: #ffffff;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .online {
+            width: 9px;
+            height: 9px;
+            background: #06E775;
+            border: 2px solid #FFFFFF;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            right: 6px;
+        }
+
+        .imgdiv {
+            position: relative !important;
+            height: 89px;
+        }
+
+        .box {
+            background-color: white !important;
+        }
+
+
+        .c-black {
+            color: #2C2D37;
+        }
+
+        .c-blue {
+            color: #635BFF;
+        }
+
+        .c-green {
+            color: #009651;
+        }
+
+        .c-yellow {
+            color: #DEA512;
+        }
+
+        .c-red {
+            color: #C8191C;
+        }
+
+        .t-bg {
+            background-color: #F7F7F7;
+        }
+
+        .a-bg {
+            background-color: #EBF9F1;
+        }
+
+        .i-bg {
+            background-color: #FEF8E7;
+        }
+
+        .s-bg {
+            background-color: #F9E8E8;
+        }
+
+        .e-bg {
+            background: #F8F6FF;
+        }
+
+        .g-bg {
+            background: #F4F8FC;
+        }
+
+        .u-bg {
+            background: #F9F9F9;
+        }
+
+        .p-16 {
+
+            font-style: normal !important;
+
+            font-size: 16px;
+            line-height: 20px;
+            color: #2C2C2C;
+        }
+
+        .p-13 {
+            font-style: normal;
+
+            font-size: 13px;
+            line-height: 16px;
+            color: #2C2C2C;
+        }
+
+        .pr-16 {
+            font-style: normal !important;
+
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .p-14 {
+            font-style: normal !important;
+
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .p-24 {
+            font-style: normal !important;
+
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        .p-12-subtitle {
+            font-style: normal !important;
+
+            font-size: 12px;
+            line-height: 15px;
+            color: #858585;
+        }
+
+        .p-12 {
+            font-style: normal !important;
+
+            font-size: 12px;
+            line-height: 15px;
+            color: #9B9B9B;
+        }
+
+        .p-12-amount {
+            font-style: normal !important;
+
+            font-size: 12px;
+            line-height: 15px;
+            color: #2C2C2C;
+        }
+
+
+        .ml1 {
+            margin: 1px;
+        }
+
+        .pl-1 {
+            padding-left: 1px;
+        }
+
+        .mt-32 {
+            margin-top: 32px;
+        }
+
+        .mt-6 {
+            margin-top: 11px;
+        }
+
+        .ml-4 {
+            margin-left: 4px;
+        }
+
+        .mr-4 {
+            margin-right: 4px;
+        }
+
+        .mb-14 {
+            margin-bottom: 14px;
+        }
+
+        .mt-8 {
+            margin-top: 8px;
+        }
+
+        .ml-13 {
+            margin-left: 13px;
+        }
+
+        .ml-60 {
+            margin-left: 60px;
+        }
+
+        .mt-5 {
+            margin-top: 5px;
+        }
+
+        .mt-4 {
+            margin-top: 0.285rem;
+        }
+
+        .mt-1 {
+            margin-bottom: 1px;
+        }
+
+        .ml-16 {
+            margin-left: 16px;
+        }
+
+        .mr-16 {
+            margin-right: 16px;
+        }
+
+        .mt-28 {
+            margin-top: 28px;
+        }
+
+        .ml-30 {
+            margin-left: 30px;
+        }
+
+        .mb-28 {
+            margin-bottom: 28px;
+        }
+
+        .mt-19 {
+            margin-top: 19px;
+        }
+
+        .mt-14 {
+            margin-top: 14px;
+        }
+
+        .mt-17 {
+            margin-top: 17px;
+        }
+
+        .ml-14 {
+            margin-left: 14px;
+        }
+
+        .ml-28 {
+            margin-left: 28px;
+        }
+
+        .mt-11 {
+            margin-top: 11px;
+        }
+
+        .desmargin {
+            margin-top: 48px;
+            margin-left: 12px;
+        }
+
+
+
+        .dotpd {
+            margin-left: 15px;
+            margin-right: 5px;
+        }
+
+        .dotmiddlepd {
+            margin-left: 7px;
+            margin-right: 5px;
+        }
+
+        .activebg {
+            background: #EBF9F1;
+            border-radius: 2px;
+            height: 16px;
+            width: 43px;
+            text-align: center;
+        }
+
+        .p-10 {
+            font-style: normal;
+            font-size: 10px;
+            line-height: 13px;
+            color: #009651;
+        }
+
+        .p-10-amount {
+            font-style: normal;
+            font-size: 10px;
+            line-height: 13px;
+            color: #9B9B9B;
+        }
+
+        .mt-12 {
+            margin-top: 12px;
+        }
+
+        .mt-4 {
+            margin-top: 4px;
+        }
+
+        .mt-24 {
+            margin-top: 24px;
+        }
+
+        .border-left {
+            border-left: 1px solid #ECF0F5;
+        }
+
+        .boxsize {
+            width: 136px;
+            height: 106px;
+            border-radius: 4px;
+        }
+
+        .sus-boxsize {
+            width: 137px;
+            height: 106px;
+            border-radius: 4px;
+        }
+
+        .total-user-sus-boxsize {
+            width: 137px;
+            height: 106px;
+            border-radius: 4px;
+        }
+
+        .walletbox {
+            width: 203px;
+            border-radius: 4px;
+            padding-bottom: 11px;
+        }
+
+        .pd-user {
+            padding-top: 19px;
+            padding-left: 14px;
+        }
+
+        .wallet-title {
+            font-style: normal;
+
+            font-size: 20px;
+            line-height: 25px;
+            color: #2C2C2C;
+        }
+
+        .wallet-text {
+            font-style: normal;
+
+            font-size: 14px;
+            line-height: 22px;
+            color: #858585;
+        }
+
+        @media (min-width: 270px) and (max-width: 575px) {
+            .mbmt-5 {
+                margin-top: 10px;
+            }
+
+            .boxsize {
+                width: 90px;
+                height: 106px;
+                border-radius: 4px;
+            }
+
+            .ml-60 {
+                margin-left: 28px;
+            }
+
+            .mblmt-20 {
+                margin-top: 20px;
+            }
+        }
+
+        .box-p {
+            padding-bottom: 30px;
+            padding-top: 28px;
+        }
+
+        .px-wallet-p {
+            padding: 28px 28px 28px 0;
+        }
+
+        .walletboxes {
+            padding: 17px 16px;
+        }
+
+        @media only screen and (min-width:520px) and (max-width:768px) {
+            .box-2 .col-xs-12 {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section profile_section">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="mt-5"></div>
+                <div class="mt-5 col-md-12">
+                    <div class="row">
+                        <span class="sans-pro agent-pro-title ml-14">Agents Profile</span>
+                    </div>
+                    <div class="box mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="d-flex flex-row">
+                                    <div class="imgdiv mt-28 ml-28">
+                                        <img class="pic" src="./assets/images/elipse.png">
+                                        <div class="online"></div>
+                                    </div>
+                                    <div class="d-flex flex-column desmargin">
+                                        <span class="sans-pro p-16 twidth">Jimmie Santos Americani</span>
+                                        <span class="sans-pro p-12 mt-4">support.techvill@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row ml-28 mt-12">
+                                    <div><span class="sans-pro p-12">Phone</span><span
+                                            class="sans-pro p-12 dotpd">:</span></div>
+                                    <div> <span class="sans-pro p-12">+98 473-3764-56</span></div>
+                                </div>
+                                <div class="d-flex flex-row ml-28 mt-4">
+                                    <div><span class="sans-pro p-12">Created</span><span
+                                            class="sans-pro p-12 dotmiddlepd">:</span>
+                                    </div>
+                                    <div><span class="sans-pro p-12">2022-4-19 03:04:32</span></div>
+                                </div>
+                                <div class="d-flex flex-row ml-28 mt-4">
+                                    <div><span class="sans-pro p-12">Status</span><span
+                                            class="sans-pro p-12 dotpd">:</span></div>
+                                    <div class=""><span class="activebg sans-pro p-10">Active</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 border-left mt-28 mb-28">
+                                <div class="ml-60 boxsize t-bg d-flex flex-column">
+                                    <svg class="mt-19 ml-14" width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.81283 6.41667C5.66373 6.41667 6.47978 6.07865 7.08146 5.47697C7.68314 4.87529 8.02116 4.05924 8.02116 3.20833C8.02116 2.35743 7.68314 1.54138 7.08146 0.939699C6.47978 0.33802 5.66373 0 4.81283 0C3.96192 0 3.14587 0.33802 2.54419 0.939699C1.94251 1.54138 1.60449 2.35743 1.60449 3.20833C1.60449 4.05924 1.94251 4.87529 2.54419 5.47697C3.14587 6.07865 3.96192 6.41667 4.81283 6.41667ZM4.81283 4.8125C5.23828 4.8125 5.6463 4.64349 5.94714 4.34265C6.24798 4.04181 6.41699 3.63379 6.41699 3.20833C6.41699 2.78288 6.24798 2.37486 5.94714 2.07402C5.6463 1.77318 5.23828 1.60417 4.81283 1.60417C4.38737 1.60417 3.97935 1.77318 3.67851 2.07402C3.37767 2.37486 3.20866 2.78288 3.20866 3.20833C3.20866 3.63379 3.37767 4.04181 3.67851 4.34265C3.97935 4.64349 4.38737 4.8125 4.81283 4.8125Z"
+                                            fill="#2C2D37" />
+                                        <path
+                                            d="M7.21875 8.82292C7.43148 8.82292 7.63549 8.90742 7.78591 9.05784C7.93633 9.20826 8.02083 9.41227 8.02083 9.625V14.4375H9.625V9.625C9.625 8.98682 9.37148 8.37478 8.92023 7.92352C8.46897 7.47226 7.85693 7.21875 7.21875 7.21875H2.40625C1.76807 7.21875 1.15603 7.47226 0.704774 7.92352C0.253515 8.37478 0 8.98682 0 9.625V14.4375H1.60417V9.625C1.60417 9.41227 1.68867 9.20826 1.83909 9.05784C1.98951 8.90742 2.19352 8.82292 2.40625 8.82292H7.21875Z"
+                                            fill="#2C2D37" />
+                                        <path
+                                            d="M12.8337 3.20834H14.4378V4.81251H16.042V6.41668H14.4378V8.02084H12.8337V6.41668H11.2295V4.81251H12.8337V3.20834Z"
+                                            fill="#2C2D37" />
+                                    </svg>
+                                    <span class="ml-14 mt-4 sans-pro pr-16 c-black">Total Users</span>
+                                    <span class="ml-14 mt-5 sans-pro p-24 c-blue">185</span>
+                                </div>
+                                <div class="ml-60 mt-12 d-flex flex-row">
+                                    <div class="boxsize a-bg d-flex flex-column">
+                                        <svg class="mt-19 ml-14" width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.81185 6.41667C5.66275 6.41667 6.4788 6.07865 7.08048 5.47697C7.68216 4.87529 8.02018 4.05924 8.02018 3.20833C8.02018 2.35743 7.68216 1.54138 7.08048 0.939699C6.4788 0.33802 5.66275 0 4.81185 0C3.96095 0 3.14489 0.33802 2.54321 0.939699C1.94154 1.54138 1.60352 2.35743 1.60352 3.20833C1.60352 4.05924 1.94154 4.87529 2.54321 5.47697C3.14489 6.07865 3.96095 6.41667 4.81185 6.41667V6.41667ZM4.81185 4.8125C5.2373 4.8125 5.64533 4.64349 5.94617 4.34265C6.24701 4.04181 6.41602 3.63378 6.41602 3.20833C6.41602 2.78288 6.24701 2.37486 5.94617 2.07402C5.64533 1.77318 5.2373 1.60417 4.81185 1.60417C4.3864 1.60417 3.97837 1.77318 3.67753 2.07402C3.37669 2.37486 3.20768 2.78288 3.20768 3.20833C3.20768 3.63378 3.37669 4.04181 3.67753 4.34265C3.97837 4.64349 4.3864 4.8125 4.81185 4.8125V4.8125Z"
+                                                fill="#009651" />
+                                            <path
+                                                d="M7.21875 8.82292C7.43148 8.82292 7.63549 8.90742 7.78591 9.05784C7.93633 9.20826 8.02083 9.41227 8.02083 9.625V14.4375H9.625V9.625C9.625 8.98682 9.37149 8.37478 8.92023 7.92352C8.46897 7.47226 7.85693 7.21875 7.21875 7.21875H2.40625C1.76807 7.21875 1.15603 7.47226 0.704774 7.92352C0.253515 8.37478 0 8.98682 0 9.625V14.4375H1.60417V9.625C1.60417 9.41227 1.68867 9.20826 1.83909 9.05784C1.98951 8.90742 2.19352 8.82292 2.40625 8.82292H7.21875Z"
+                                                fill="#009651" />
+                                            <path
+                                                d="M12.8327 3.20831H14.4368V4.81248H16.041V6.41665H14.4368V8.02081H12.8327V6.41665H11.2285V4.81248H12.8327V3.20831Z"
+                                                fill="#009651" />
+                                        </svg>
+                                        <span class="ml-14 mt-4 sans-pro p-14 c-green">Active Users</span>
+                                        <span class="ml-14 mt-5 mblmt-20 sans-pro p-24 c-black">85</span>
+                                    </div>
+                                    <div class="ml-16 boxsize i-bg d-flex flex-column">
+                                        <svg class="mt-19 ml-14" width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.81185 6.41667C5.66275 6.41667 6.4788 6.07865 7.08048 5.47697C7.68216 4.87529 8.02018 4.05924 8.02018 3.20833C8.02018 2.35743 7.68216 1.54138 7.08048 0.939699C6.4788 0.33802 5.66275 0 4.81185 0C3.96095 0 3.14489 0.33802 2.54321 0.939699C1.94154 1.54138 1.60352 2.35743 1.60352 3.20833C1.60352 4.05924 1.94154 4.87529 2.54321 5.47697C3.14489 6.07865 3.96095 6.41667 4.81185 6.41667ZM4.81185 4.8125C5.2373 4.8125 5.64533 4.64349 5.94617 4.34265C6.24701 4.04181 6.41602 3.63379 6.41602 3.20833C6.41602 2.78288 6.24701 2.37486 5.94617 2.07402C5.64533 1.77318 5.2373 1.60417 4.81185 1.60417C4.3864 1.60417 3.97837 1.77318 3.67753 2.07402C3.37669 2.37486 3.20768 2.78288 3.20768 3.20833C3.20768 3.63379 3.37669 4.04181 3.67753 4.34265C3.97837 4.64349 4.3864 4.8125 4.81185 4.8125Z"
+                                                fill="#DEA512" />
+                                            <path
+                                                d="M7.21875 8.82292C7.43148 8.82292 7.63549 8.90742 7.78591 9.05784C7.93633 9.20826 8.02083 9.41227 8.02083 9.625V14.4375H9.625V9.625C9.625 8.98682 9.37148 8.37478 8.92023 7.92352C8.46897 7.47226 7.85693 7.21875 7.21875 7.21875H2.40625C1.76807 7.21875 1.15603 7.47226 0.704774 7.92352C0.253515 8.37478 0 8.98682 0 9.625V14.4375H1.60417V9.625C1.60417 9.41227 1.68867 9.20826 1.83909 9.05784C1.98951 8.90742 2.19352 8.82292 2.40625 8.82292H7.21875Z"
+                                                fill="#DEA512" />
+                                            <path
+                                                d="M12.8327 3.20831H14.4368V4.81248H16.041V6.41665H14.4368V8.02081H12.8327V6.41665H11.2285V4.81248H12.8327V3.20831Z"
+                                                fill="#DEA512" />
+                                        </svg>
+
+                                        <span class="ml-14 mt-4 sans-pro p-14 c-yellow">Inactive Users</span>
+                                        <span class="ml-14 mt-5 sans-pro p-24 c-black">90</span>
+                                    </div>
+                                    <div class="ml-16 boxsize s-bg d-flex flex-column">
+                                        <svg class="mt-19 ml-14" width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.81185 6.41667C5.66275 6.41667 6.4788 6.07865 7.08048 5.47697C7.68216 4.87529 8.02018 4.05924 8.02018 3.20833C8.02018 2.35743 7.68216 1.54138 7.08048 0.939699C6.4788 0.33802 5.66275 0 4.81185 0C3.96095 0 3.14489 0.33802 2.54321 0.939699C1.94154 1.54138 1.60352 2.35743 1.60352 3.20833C1.60352 4.05924 1.94154 4.87529 2.54321 5.47697C3.14489 6.07865 3.96095 6.41667 4.81185 6.41667ZM4.81185 4.8125C5.2373 4.8125 5.64533 4.64349 5.94617 4.34265C6.24701 4.04181 6.41602 3.63379 6.41602 3.20833C6.41602 2.78288 6.24701 2.37486 5.94617 2.07402C5.64533 1.77318 5.2373 1.60417 4.81185 1.60417C4.3864 1.60417 3.97837 1.77318 3.67753 2.07402C3.37669 2.37486 3.20768 2.78288 3.20768 3.20833C3.20768 3.63379 3.37669 4.04181 3.67753 4.34265C3.97837 4.64349 4.3864 4.8125 4.81185 4.8125Z"
+                                                fill="#C8191C" />
+                                            <path
+                                                d="M7.21875 8.82292C7.43148 8.82292 7.63549 8.90742 7.78591 9.05784C7.93633 9.20826 8.02083 9.41227 8.02083 9.625V14.4375H9.625V9.625C9.625 8.98682 9.37148 8.37478 8.92023 7.92352C8.46897 7.47226 7.85693 7.21875 7.21875 7.21875H2.40625C1.76807 7.21875 1.15603 7.47226 0.704774 7.92352C0.253515 8.37478 0 8.98682 0 9.625V14.4375H1.60417V9.625C1.60417 9.41227 1.68867 9.20826 1.83909 9.05784C1.98951 8.90742 2.19352 8.82292 2.40625 8.82292H7.21875Z"
+                                                fill="#C8191C" />
+                                            <path
+                                                d="M12.8327 3.20831H14.4368V4.81248H16.041V6.41665H14.4368V8.02081H12.8327V6.41665H11.2285V4.81248H12.8327V3.20831Z"
+                                                fill="#C8191C" />
+                                        </svg>
+                                        <span class="ml-14 mt-4 sans-pro p-14 c-red">Suspended Users</span>
+                                        <span class="ml-14 mt-5 sans-pro p-24 c-black">10</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box section-wallet">
+                <div class="px-wallet-p">
+                    <div class="row">
+                        <div class="col-md-8 col-xs-12">
+                            <div> <span class="ml-28 sans-pro wallet-title">Wallets</span></div>
+                            <p class="sans-pro wallet-text ml-28 mt-8">Here you will get all of your Fiat and Crypto
+                                wallets
+                                including
+                                default one.
+                                You can also perform crypto send/receive of your crypto coins.</p>
+                        </div>
+                    </div>
+                    <div class="row box-2">
+                        <div class="col-md-3 col-sm-4 col-xs-12 mt-32">
+                            <div class="walletboxes e-bg ml-28 mbmt-5">
+                                <div class="d-flex">
+                                    <img src="./assets/images/euro.svg" alt="euro">
+                                    <span class="sans-pro p-13 ml-4">EUR</span>
+                                </div>
+                                <div class="amount">
+                                    <span class="sans-pro p-24 c-blue">45.02</span>
+                                </div>
+                                <div class="d-flex flex-row justify-content-between mt-11">
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount ">
+                                                $3.00
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span class="wallets-amount-description p-10-amount sans-pro">Deposit</span>
+                                            <img src="./assets/images/downarow.svg" class="img-fluid" alt="d-arow">
+                                        </div>
+
+                                    </div>
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $1.45
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span
+                                                class="wallets-amount-description p-10-amount sans-pro">Withdrawal</span>
+                                            <img src="./assets/images/uparrow.svg" class="img-fluid" alt="up-arrow">
+                                        </div>
+
+                                    </div>
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $4.00
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span class="wallets-amount-description p-10-amount sans-pro">Revenue</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12 mt-32">
+                            <div class="walletboxes g-bg ml-30 mbmt-5">
+                                <div class="d-flex">
+                                    <img src="./assets/images/euro.svg" alt="euro">
+                                    <span class="sans-pro p-13 ml-4">GBP</span>
+                                </div>
+                                <div class="amount">
+                                    <span class="sans-pro p-24 c-blue">12.99</span>
+                                </div>
+                                <div class="d-flex flex-row justify-content-between mt-11">
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $3.00
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span class="wallets-amount-description p-10-amount sans-pro">Deposit</span>
+                                            <img src="./assets/images/downarow.svg" alt="d-arrow">
+                                        </div>
+
+                                    </div>
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $1.45
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span
+                                                class="wallets-amount-description p-10-amount sans-pro">Withdrawal</span>
+                                            <img src="./assets/images/uparrow.svg" alt="d-arrow">
+                                        </div>
+
+                                    </div>
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $4.00
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span class="wallets-amount-description p-10-amount sans-pro">Revenue</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12 mt-32">
+                            <div class="walletboxes u-bg ml-30 mbmt-5">
+                                <div class="d-flex">
+                                    <img src="./assets/images/euro.svg" alt="euro">
+                                    <span class="sans-pro p-13 ml-4">USD</span>
+                                </div>
+                                <div class="amount">
+                                    <span class="sans-pro p-24 c-blue">4000.59</span>
+                                </div>
+                                <div class="d-flex flex-row justify-content-between mt-11">
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $3.00
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span class="wallets-amount-description p-10-amount sans-pro">Deposit</span>
+                                            <img src="./assets/images/downarow.svg" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $1.45
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span
+                                                class="wallets-amount-description p-10-amount sans-pro">Withdrawal</span>
+                                            <img src="./assets/images/uparrow.svg" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $4.00
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span class="wallets-amount-description p-10-amount sans-pro">Revenue</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12 mt-32">
+                            <div class="walletboxes u-bg ml-30 mbmt-5">
+                                <div class="d-flex">
+                                    <img src="./assets/images/euro.svg" alt="euro">
+                                    <span class="sans-pro p-13 ml-4">USD</span>
+                                </div>
+                                <div class="amount">
+                                    <span class="sans-pro p-24 c-blue">4000.59</span>
+                                </div>
+                                <div class="d-flex flex-row justify-content-between mt-11">
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $3.00
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span class="wallets-amount-description p-10-amount sans-pro">Deposit</span>
+                                            <img src="./assets/images/downarow.svg" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $1.45
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span
+                                                class="wallets-amount-description p-10-amount sans-pro">Withdrawal</span>
+                                            <img src="./assets/images/uparrow.svg" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="amnt">
+                                        <div class="dollar">
+                                            <span class="sans-pro p-12-amount">
+                                                $4.00
+                                            </span>
+                                        </div>
+                                        <div class="dollarchild">
+                                            <span class="wallets-amount-description p-10-amount sans-pro">Revenue</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="../../assets/jquery.js"></script>
+    <script src="../../assets/bootstrap.min.js"></script>
+</body>
+
+</html>
